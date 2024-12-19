@@ -226,3 +226,26 @@ ul{
     color: #DBE2E9;
     font-family: "Inter", serif;
 }
+
+.application__area{
+    height: 600px;
+    background-color: black;
+}
+
+.area__container{
+    display: flex;
+}
+
+.area__title{
+    padding-left: 50px;
+    padding-top: 50px;
+    width: 750px;
+    color: white;
+    font-family: "Rubik", serif;
+    font-size: 30px;
+}
+
+.area__image img{
+    width: 350px;
+    height: 200px;
+}
