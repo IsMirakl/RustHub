@@ -40,6 +40,11 @@ header{
     transition: transform 0.3s ease;
 }
 
+
+.header__logo img:hover{
+    transform: scale(1.1);
+}
+
 .header__logo{
     padding-left: 100px;
 }
@@ -89,8 +94,25 @@ ul{
     background-color: black;
 }
 
+.image__banner img {
+    transition: all 0.3s ease;
+}
+
+.image__banner img:hover {
+    animation: moveLeft 0.5s ease-in-out forwards, scale 0.5s ease-in-out forwards;
+}
+
+@keyframes moveLeft {
+    to { transform: translateX(20px); }
+}
+
+@keyframes scale {
+    to { transform: scale(1.1); }
+}
+
+
 .body__banner{
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 .banner__title {
@@ -110,9 +132,18 @@ ul{
 }
 
 
+.banner__title span{
+    text-shadow: 10px 10px 40px #c2383a,
+    -10px -10px 40px #FF7F50;
+}
+
 .banner_buttons{
     display: flex;
     gap: 30px;
+}
+
+.banner_buttons a:hover{
+    transform: scale(1.2);
 }
 
 .banner_buttons button, 
@@ -137,6 +168,7 @@ ul{
     align-items: center;
     text-decoration: none;
     background-color: #FF7F50;
+    transition: transform 0.3s ease;
 }
 
 .advantages {
