@@ -83,7 +83,7 @@ ul{
     list-style: none;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     header {
         flex-wrap: wrap;
         justify-content: center;
@@ -118,7 +118,7 @@ ul{
     }
 }
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
     header {
         flex-direction: column-reverse;
         justify-content: space-between;
@@ -243,7 +243,7 @@ ul{
     transition: transform 0.3s ease;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .welcome__banner {
         flex-direction: column;
         height: auto;
@@ -343,6 +343,25 @@ ul{
     font-family: "Inter", serif;
 }
 
+
+@media screen and (max-width: 1024px) {
+    .container__adv {
+        grid-template-columns: repeat(2, 1fr);
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container__adv {
+        grid-template-columns: 1fr;
+    }
+
+    .advantages__card {
+        width: 100%;
+    }
+}
+
+
 .application__area{
     height: 650px;
     background-color: black;
@@ -405,6 +424,58 @@ ul{
 }
 
 
+@media screen and (max-width: 1024px) {
+    .area__image img {
+        width: 250px;
+        height: 150px;
+    }
+
+    .area__title {
+        padding-left: 20px;
+        width: 500px;
+        font-size: 26px;
+    }
+
+    .area__card {
+        margin-left: 20px;
+        width: 400px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .title__area {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .area__image img {
+        width: 90%;
+        height: auto;
+    }
+
+    .area__title {
+        padding: 20px;
+        width: auto;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .area {
+        grid-template-columns: 1fr;
+    }
+
+    .area__card {
+        margin: 20px;
+        width: auto;
+    }
+
+    .application__area {
+        height: auto;
+        padding: 20px;
+    }
+}
+
 
 
 .footer {
@@ -452,15 +523,27 @@ ul{
     text-decoration: underline;
 }
 
-.social-icons {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
 .copyright {
     margin-top: 40px;
     text-align: center;
     font-size: 14px;
 }
 
+
+@media screen and (max-width: 1024px) {
+    .footer-container {
+        display: block;
+        margin-left: 50px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .footer {
+        padding: 30px 0;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+}
