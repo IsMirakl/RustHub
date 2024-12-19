@@ -232,8 +232,13 @@ ul{
     background-color: black;
 }
 
-.area__container{
+.title__area{
     display: flex;
+}
+
+.area__image img{
+    width: 350px;
+    height: 200px;
 }
 
 .area__title{
@@ -245,7 +250,26 @@ ul{
     font-size: 30px;
 }
 
-.area__image img{
-    width: 350px;
-    height: 200px;
+
+.area__circle{
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 64px;
+    margin-right: 20px;
+}
+
+.area__card{
+    margin-left: 70px;
+    margin-top: 30px;
+    color: white;
+    font-family: "Inter", serif;
+    width: 570px;
+    font-size: 17px;
+}
+
+.card__title{
+    font-family: "Rubik", serif;
+    display: flex;
+    align-items: center;
 }
