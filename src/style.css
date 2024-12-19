@@ -228,12 +228,20 @@ ul{
 }
 
 .application__area{
-    height: 600px;
+    height: 650px;
     background-color: black;
 }
 
 .title__area{
     display: flex;
+}
+
+.area__image:hover{
+    transform: scale(1.1);
+}
+
+.area__image{
+    transition: transform 0.3s ease;
 }
 
 .area__image img{
@@ -250,8 +258,13 @@ ul{
     font-size: 30px;
 }
 
+.area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
 
-.area__circle{
+.area__circle {
     width: 15px;
     height: 15px;
     background-color: red;
@@ -259,17 +272,35 @@ ul{
     margin-right: 20px;
 }
 
-.area__card{
-    margin-left: 70px;
-    margin-top: 30px;
+.area__card {
+    margin-top: 40px;
+    margin-left: 50px;
     color: white;
     font-family: "Inter", serif;
-    width: 570px;
-    font-size: 17px;
+    width: 600px;
+    font-size: 19px;
 }
 
-.card__title{
+.card__title {
     font-family: "Rubik", serif;
     display: flex;
+    color: #828282;
     align-items: center;
+}
+
+
+.footer {
+    background-color: #1f2022;
+    height: 350px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: #333;
 }
